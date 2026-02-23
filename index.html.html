@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Nails by Ishita</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background-color: #fff0f5;
+    padding:20px;
+}
+
+h1{
+    text-align:center;
+    color:#d63384;
+    margin-bottom:5px;
+}
+
+.insta{
+    text-align:center;
+    color:#555;
+    font-size:14px;
+    margin-bottom:20px;
+}
+
+form{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px lightgray;
+    max-width:400px;
+    margin:auto;
+}
+
+input, select, textarea{
+    width:100%;
+    padding:8px;
+    margin:8px 0;
+    border-radius:5px;
+    border:1px solid #ccc;
+}
+
+button{
+    background:#d63384;
+    color:white;
+    padding:10px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    width:100%;
+}
+
+button:hover{
+    background:#b0256a;
+}
+
+/* Checkbox Fix */
+input[type="checkbox"]{
+    width:auto;
+    margin-right:5px;
+}
+
+.checkbox-group{
+    display:flex;
+    align-items:center;
+    margin-top:10px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>💅 Nails by Ishita Booking Form</h1>
+<div class="insta">Follow us on Instagram: @Beautybabe.ish</div>
+
+<form action="https://formsubmit.co/chhabraishita140@gmail.com" method="POST">
+
+<!-- Redirect after submit (IMPORTANT: Replace with your Netlify link) -->
+<input type="hidden" name="_next" value="https://YOUR-NETLIFY-LINK.netlify.app/">
+
+<input type="hidden" name="_captcha" value="false">
+
+<label>Name:</label>
+<input type="text" name="Name" required>
+
+<label>Phone Number:</label>
+<input type="tel" name="Phone" required>
+
+<label>Choose Nail Type:</label>
+<select name="Nail Type">
+<option>Press-Ons</option>
+<option>Permanent</option>
+<option>Temporary</option>
+<option>Shellac</option>
+</select>
+
+<label>Select Color:</label>
+<select name="Color">
+<option>Red</option>
+<option>Pink</option>
+<option>Nude</option>
+<option>Black</option>
+<option>Custom Design</option>
+</select>
+
+<label>Special Instructions:</label>
+<textarea name="Instructions"></textarea>
+
+<div class="checkbox-group">
+<input type="checkbox" name="Subscribe">
+<label>Subscribe for offers</label>
+</div>
+
+<br>
+
+<button type="submit">Book Now</button>
+
+</form>
+
+</body>
+</html>
